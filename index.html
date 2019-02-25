@@ -4,13 +4,49 @@
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
 
 <title>Officially Epic</title>
+
+    <script>
+    function myGame() {
+        confirm("I hope you are ready for the game of a lifetime! Remember, 'OK' is option A and 'Cancel' is option B.");
+        var one = confirm("So, you are walking down the street one day when you trip over an ant. Furious, that ant declares war on you. What do you do? Do you A) Stomp the ant, or B) Run away.");
+
+        if (one == true) {
+            var two = confirm("So you kill the ant, thus ending the war. Good job. However, it is not over yet. Now every ant in the world wants to fight you! Do you A) Go to New Zealand for help, or B) go to bees for help.");
+            if (two == true) {
+                alert("You go to New Zealand, forgetting that recently, New Zealand allied themselves with all ant-kind. When you arrive, you are promptly handed over to ants, who imprison, and you must make them coffe forever. Game over.");
+            } else {
+                var four = confirm("You enlist the help of bees. However, communication is difficult. They mistakenly beleived you asked them to fling the moon into the Earth, thus wiping out everyone, while you and the bees are kept safe. What do you do? A) Exact revenge on the bees for what they have foolishly done. or B) Attempt to become the Leader of Bees, the Ruler of the New Hive.");
+                alert("It doesn't matter what you decide to do, because the bees all had a heart attack and died, collectively. You sigh.");
+            }
+        } else {
+            var three = confirm("So you run away. You run so far, in fact, your legs become muscular and you become the world's fastest runner. What do you do with you new-found speed? Do you A) Become an athelete, or B) Become a postman.");
+            if (three == true) {
+                alert("You wisely become an athlete. You become an Olympic gold meadlist. It's great. One day, however, alieans come and challenge humans to a freindly race. As the world's fastest runner, you are put forward. They race is simple; the first one to go around the Equator. During the race, you run so fast you go forward in time, and you enter a higher plane of existence. But you can't handle, so after one second of godly glory, you die.");
+            } else {
+                alert("You become a postie, effortlessly delivering mail right across the country. However, mail becomes obselete, and nobody needs the postal service anymore. You are embittered and out of a job. You don't know what you are going to do with your life. Game over.");
+            }
+        }
+     }
+
+    function myMadLibs() {
+        var adj1 = prompt("Adjective that you would use to describe yourself");
+        var nou1 = prompt("An illicit substance, item or object (plural)");
+        var nou2 = prompt("An occupation (plural noun)");
+        var adj2 = prompt("Adjective to describe something you'd value");
+        var nou3 = prompt("Something valuable (noun)");
+        var nou4 = prompt("A trick of some kind (plural)");
+        var nou5 = prompt("A place you would hang out at");
+        var nou6 = prompt("Method of being killed");
+        confirm("So, you are a(n) " + adj1 + " crook, trying to make it big by selling " + nou1 + " and assainating " + nou2 + ". One day, you find a " + adj2 + " " + nou3 + " while doing epic " + nou4 + " at the local " + nou5 + ". Before you have a chance to sell however, you get " + nou6 + " by a local thug, you then steals the " + nou3 + ", and then has a heart attack");
+    }
+    </script>
     
     <style>
         @keyframes backg {
             0%   {background-color:floralwhite;}
-            25%  {background-color:yellow;}
-            50%  {background-color:purple;}
-            75%  {background-color:coral;}
+            30%  {background-color:yellow;}
+            35%  {background-color:purple;}
+            38%  {background-color:coral;}
             100% {background-color:floralwhite;}
         }
         
@@ -30,22 +66,31 @@
             left: 500px; 
          }
 
-        p {
+        #allabout {
             color: blue;
             position: absolute;
-            top: 100px;
-            left: 700px;
+            top: 270px;
+            left: 130px;
+            color: black;
+            text-align: center;
+            font-family: 'Comic Sans MS';
             }
-       h4 {
+
+       #links {
            position: absolute;
            left:780px;
            top:150px;
+       }
+        #about {
+           position: absolute;
+           left:780px;
+           top:225px;
        }
 
        #lol {
            position: absolute;
            top: 200px;
-           left: 720px;
+           left: 600px;
            background-color: #4CAF50;
            -webkit-transition-duration: 0.4s; /* Safari */
            transition-duration: 0.4s;
@@ -55,32 +100,186 @@
            background-color: red; /* Green */
            color: white;
            }
+
+       #gamelink {
+           position: absolute;
+           top: 200px;
+           left: 850px;
+           background-color: darkorange;
+           -webkit-transition-duration: 0.4s; /* Safari */
+           transition-duration: 0.4s;
+           }
+       
+       #gamelink:hover {
+           background-color: cyan; /* Green */
+           color: darkmagenta;
+           }
    
         @keyframes example {
-         from {left: 300px;}
+         from {left: 25px;}
          to {left: 1100px;}
            }
 
-        p {
+        #epic {
             color: blue;
             position: absolute;
             top: 100px;
-            left: 700px;
+            left: 25px;
+            font-size: 30px;
             animation-name: example;
             animation-duration: 4s;
             animation-iteration-count: infinite;
             animation-delay: 2s;
             animation-direction: alternate; 
            }  
-    
-    </style>
 
+        #allabout {
+         position: absolute;
+         left: 100px;
+        }
+
+       .fa-chess-king {
+           position: absolute;
+           top: 405px; 
+           left: 535px;
+           opacity: 1;
+           }
+
+        .square1 {
+            height: 50px;
+            width: 190px;
+            background-color: peachpuff;
+            opacity: 0.3;
+            outline: #00FF00 dotted thick;
+            position: absolute;
+            top: 400px;
+            left: 400px;
+        }
+
+        .inbox1 {
+            position: absolute;
+            top: 400px;
+            left: 410px;
+            opacity: 1;
+            font-family:Tahoma;
+        }
+
+        .square2 {
+            height: 50px;
+            width: 190px;
+            background-color: peachpuff;
+            opacity: 0.3;
+            outline: #00FF00 dotted thick;
+            position: absolute;
+            top: 400px;
+            left: 900px;
+        }
+
+        .inbox2 {
+            position: absolute;
+            top: 400px;
+            left: 910px;
+            opacity: 1;
+            font-family:Tahoma;
+        }
+
+        .square3 {
+            height: 50px;
+            width: 190px;
+            background-color: peachpuff;
+            opacity: 0.3;
+            outline: #00FF00 dotted thick;
+            position: absolute;
+            top: 500px;
+            left: 400px;
+        }
+
+        .inbox3 {
+            position: absolute;
+            top: 500px;
+            left: 410px;
+            opacity: 1;
+            font-family:Tahoma;
+        }
+
+        .square4 {
+            height: 50px;
+            width: 190px;
+            background-color: peachpuff;
+            opacity: 0.3;
+            outline: #00FF00 dotted thick;
+            position: absolute;
+            top: 500px;
+            left: 900px;
+        }
+
+        .inbox4 {
+            position: absolute;
+            top: 500px;
+            left: 910px;
+            opacity: 1;
+            font-family:Tahoma;
+        }
+
+        #playbutton1 {
+            position: absolute;
+            top: 600px;
+            left: 600px;
+        }
+    
+        #playbutton2 {
+            position: absolute;
+            top: 650px;
+            left: 690px;
+        }
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 </head>
 <body>
 <h1 id="heading">This is the offical website of JGM Mackmen!</h1>
-<p>The most epic-est Youtuber ever.</p>
-<h4>LINKS:</h4>
+<p id="epic">The most epic-est Youtuber ever.</p>
+<h4 id="links">LINKS:</h4>
 <button id="lol" onclick="location.href='https://www.youtube.com/channel/UCRxQg233C8yxIq6qt4KeZDA'" type="submit"><id id="text">The Official YouTube Channel</id></button>
+<button id="gamelink" onclick="location.href = 'https://jjblush.itch.io/spud-gang-the-game'" type="submit"><id id="text">The Official Spud Gang Game</id></button>
+<h4 id="about">ABOUT</h4>
+<p id="allabout">JGM Mackmen was founded all the way back in 2016, and the channel has been popping off ever since. 
+    I make next-level 3D animations, diss tracks, and more! Subscribe or perish.</p>
+
+<i class='fas fa-chess-king' style='font-size:36px'></i>
+<i class='fas fa-fist-raised' style='
+           font-size:36px; 
+           position: absolute;
+           top: 405px; 
+           left: 1035px;'></i>
+    <i class='fas fa-angle-double-up' style='
+           font-size:36px;
+           position: absolute;
+           top: 505px;
+           left: 550px;'></i>
+    <i class='far fa-smile-wink' style='
+    font-size:36px;
+    position: absolute;
+    top: 505px;
+    left: 1050px;'></i>
+
+<div class="square1"></div>
+<p class="inbox1">I am the KING!</p>
+
+<div class="square2"></div>
+<p class="inbox2">I always WIN!</p>
+
+<div class="square3"></div>
+<p class="inbox3">Rising to the TOP!</p>
+
+<div class="square4"></div>
+<p class="inbox4">Never gonna STOP!</p>
+
+<button id="playbutton1" type="button" onclick="myGame()">Play an epic choose your own adventure game</button>
+
+<button id="playbutton2" type="button" onclick="myMadLibs()">Play Mad Libs</button>
 </body>
+
+<!-- Get out of it you hacker! Lol. Anyway, here is you first clue: 3384739q723hfiq9ruqewfhfa --> 
 </html>
 
